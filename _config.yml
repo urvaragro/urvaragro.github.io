@@ -1,17 +1,17 @@
-name: "Paromint"
-title: "Paromint"
-description: "Paromint Advisory Pvt. Ltd. | A Global Asset Management Company"
-meta_description: "Paromint Advisory Pvt. Ltd. | A Global Asset Management Company"
+name: "urvaragro"
+title: "urvaragro"
+description: "urvaragro Advisory Pvt. Ltd. | A Global Asset Management Company"
+meta_description: "urvaragro Advisory Pvt. Ltd. | A Global Asset Management Company"
 logo: 'assets/img/logo.png'
 favicon: 'assets/img/favicon.png'
 paginate: 12
 baseurl: ''
-url: 'https://paromint-staging.github.io/'
-email: 'dhammapal@paromint.com'
+url: 'https://urvaragro-staging.github.io/'
+email: 'dhammapal@urvaragro.com'
 locale: en_US
 seo:
-  keywords: 'Paromint'
-  site_name: Paromint
+  keywords: 'urvaragro'
+  site_name: urvaragro
 og:
   type: "website"
 
