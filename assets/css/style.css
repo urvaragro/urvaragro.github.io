@@ -1029,6 +1029,10 @@ a:hover {
   letter-spacing: 0.03em;
 }
 
+.text-white {
+  color: #ffffff;
+}
+
 .intro .spacial {
   -webkit-animation-delay: 0.2s;
   animation-delay: 0.2s;
