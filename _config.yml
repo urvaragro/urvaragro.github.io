@@ -1,12 +1,12 @@
 name: "urvaragro"
 title: "urvaragro"
-description: "urvaragro Advisory Pvt. Ltd. | A Global Asset Management Company"
-meta_description: "urvaragro Advisory Pvt. Ltd. | A Global Asset Management Company"
+description: "urvaragro | Urvaragro is an agriculture company with the sole aim of making agriculture a profitable rural livelihood. "
+meta_description: "urvaragro | Urvaragro is an agriculture company with the sole aim of making agriculture a profitable rural livelihood. "
 logo: 'assets/img/logo.png'
-favicon: 'assets/img/favicon.png'
+favicon: 'assets/img/icon/favicon.ico'
 paginate: 12
 baseurl: ''
-url: 'https://urvaragro-staging.github.io/'
+url: 'https://urvaragro.com/'
 email: 'dhammapal@urvaragro.com'
 locale: en_US
 seo:
