@@ -1,5 +1,4 @@
 name: "urvaragro"
-title: "urvaragro"
 description: "urvaragro | Urvaragro is an agriculture company with the sole aim of making agriculture a profitable rural livelihood. "
 meta_description: "urvaragro | Urvaragro is an agriculture company with the sole aim of making agriculture a profitable rural livelihood. "
 logo: 'assets/img/logo.png'
@@ -8,12 +7,12 @@ paginate: 12
 baseurl: ''
 url: 'https://urvaragro.com/'
 email: 'dhammapal@urvaragro.com'
+title: "urvaragro"
 locale: en_US
-seo:
-  keywords: 'urvaragro'
-  site_name: urvaragro
-og:
-  type: "website"
+icons:
+  57: assets/img/icons/apple-touch-icon-57x57.png
+  
+
 
 plugins: 
   - jekyll-paginate
