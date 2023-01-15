@@ -4,7 +4,8 @@ permalink: /products
 canonical_url: "https://urvaragro.com/products"
 title: "Urvaragro | Products "
 image_url: assets/img/logo/logo-rgb-04.png
-description: "Urvaragro is an agriculture company engaging in research to make agriculture a profitable cooperative engagement for rural societies"
+description: "Urvaragro is an agriculture company engaging in research to make agriculture a profitable cooperative
+engagement for rural societies"
 date: 2023-01-05T10:15:00Z
 keywords: "Productive, agricultural, Rural, Livelihood, environmental, health, Seed, Conservation"
 ---
@@ -39,144 +40,31 @@ keywords: "Productive, agricultural, Rural, Livelihood, environmental, health, S
     <section class="news-grid grid">
         <div class="container">
             <div class="row">
+                {% for product in site.data.products %}
                 <div class="col-md-4">
                     <div class="card-box-b card-shadow news-box">
                         <div class="img-box-b">
-                            <img src="../assets/img/urvara/pexels-mark-stebnicki-2451416.jpg" alt="" class="img-b img-fluid">
+                            <img src="{{product.image_url_600by800}}" alt="" class="img-b img-fluid">
                         </div>
                         <div class="card-overlay">
                             <div class="card-header-b">
                                 <div class="card-category-b">
-                                    <a href="/ug-fer-t-sol" class="category-b">UG FerTSol</a>
+                                    <a href="{{product.page_link}}" class="category-b">{{product.name}}</a>
                                 </div>
                                 <div class="card-title-b">
                                     <h2 class="title-2">
-                                        <a href="/ug-fer-t-sol">Sulphate of Potash
-                                            </a>
+                                        <a href="{{product.page_link}}">{{product.full_name}}
+                                        </a>
                                     </h2>
                                 </div>
                                 <div class="card-date">
-                                    <span class="date-b">Composition : 00:00:50</span>
+                                    <span class="date-b">Composition : {{product.composition}}</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card-box-b card-shadow news-box">
-                        <div class="img-box-b">
-                            <img src="assets/img/post-2.jpg" alt="" class="img-b img-fluid">
-                        </div>
-                        <div class="card-overlay">
-                            <div class="card-header-b">
-                                <div class="card-category-b">
-                                    <a href="/ug-fer-t-sol" class="category-b">UG FerTSol</a>
-                                </div>
-                                <div class="card-title-b">
-                                    <h2 class="title-2">
-                                        <a href="/ug-fer-t-sol">Sulphate of Potash
-                                            </a>
-                                    </h2>
-                                </div>
-                                <div class="card-date">
-                                    <span class="date-b">Composition : 00:00:50</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card-box-b card-shadow news-box">
-                        <div class="img-box-b">
-                            <img src="assets/img/post-3.jpg" alt="" class="img-b img-fluid">
-                        </div>
-                         <div class="card-overlay">
-                            <div class="card-header-b">
-                                <div class="card-category-b">
-                                    <a href="/ug-fer-t-sol" class="category-b">UG FerTSol</a>
-                                </div>
-                                <div class="card-title-b">
-                                    <h2 class="title-2">
-                                        <a href="/ug-fer-t-sol">Sulphate of Potash
-                                            </a>
-                                    </h2>
-                                </div>
-                                <div class="card-date">
-                                    <span class="date-b">Composition : 00:00:50</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card-box-b card-shadow news-box">
-                        <div class="img-box-b">
-                            <img src="assets/img/post-4.jpg" alt="" class="img-b img-fluid">
-                        </div>
-                         <div class="card-overlay">
-                            <div class="card-header-b">
-                                <div class="card-category-b">
-                                    <a href="/ug-fer-t-sol" class="category-b">UG FerTSol</a>
-                                </div>
-                                <div class="card-title-b">
-                                    <h2 class="title-2">
-                                        <a href="/ug-fer-t-sol">Sulphate of Potash
-                                            </a>
-                                    </h2>
-                                </div>
-                                <div class="card-date">
-                                    <span class="date-b">Composition : 00:00:50</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card-box-b card-shadow news-box">
-                        <div class="img-box-b">
-                            <img src="assets/img/post-5.jpg" alt="" class="img-b img-fluid">
-                        </div>
-                         <div class="card-overlay">
-                            <div class="card-header-b">
-                                <div class="card-category-b">
-                                    <a href="/ug-fer-t-sol" class="category-b">UG FerTSol</a>
-                                </div>
-                                <div class="card-title-b">
-                                    <h2 class="title-2">
-                                        <a href="/ug-fer-t-sol">Sulphate of Potash
-                                            </a>
-                                    </h2>
-                                </div>
-                                <div class="card-date">
-                                    <span class="date-b">Composition : 00:00:50</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card-box-b card-shadow news-box">
-                        <div class="img-box-b">
-                            <img src="assets/img/post-6.jpg" alt="" class="img-b img-fluid">
-                        </div>
-                         <div class="card-overlay">
-                            <div class="card-header-b">
-                                <div class="card-category-b">
-                                    <a href="/ug-fer-t-sol" class="category-b">UG FerTSol</a>
-                                </div>
-                                <div class="card-title-b">
-                                    <h2 class="title-2">
-                                        <a href="/ug-fer-t-sol">Sulphate of Potash
-                                            </a>
-                                    </h2>
-                                </div>
-                                <div class="card-date">
-                                    <span class="date-b">Composition : 00:00:50</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                {% endfor %}
             </div>
 
         </div>
