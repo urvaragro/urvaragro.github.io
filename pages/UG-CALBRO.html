@@ -1,0 +1,14 @@
+---
+layout: default
+permalink: /UG-CALBRO
+canonical_url: "https://urvaragro.com/UG-CALBRO"
+title: "Urvaragro | UG CALBRO"
+---
+
+{% for product in site.data.product-list %}
+{% if product.ProductName == 'UG CALBRO' %}
+{% assign productName = product.ProductName %}
+{% assign productNameSlug = productName | replace: " ", "-" %}
+{% include product.html %}
+{% endif %}
+{% endfor %}

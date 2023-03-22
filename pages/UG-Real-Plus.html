@@ -1,0 +1,12 @@
+---
+layout: default
+permalink: /UG-Real-Plus
+canonical_url: "https://urvaragro.com/UG-Real-Plus"
+title: "Urvaragro | UG-Real-Plus"
+---
+
+{% for product in site.data.product-list %}
+{% if product.ProductName == 'UG Real Plus' %}
+{% include product.html %}
+{% endif %}
+{% endfor %}

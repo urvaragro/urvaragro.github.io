@@ -1,0 +1,12 @@
+---
+layout: default
+permalink: /UG-MAP
+canonical_url: "https://urvaragro.com/UG-MAP"
+title: "Urvaragro | UG-MAP"
+---
+
+{% for product in site.data.product-list %}
+{% if product.ProductName == 'UG MAP' %}
+{% include product.html %}
+{% endif %}
+{% endfor %}

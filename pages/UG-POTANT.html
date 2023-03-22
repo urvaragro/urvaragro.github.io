@@ -1,0 +1,12 @@
+---
+layout: default
+permalink: /UG-POTANT
+canonical_url: "https://urvaragro.com/UG-POTANT"
+title: "Urvaragro | UG-POTANT"
+---
+
+{% for product in site.data.product-list %}
+{% if product.ProductName == 'UG POTANT' %}
+{% include product.html %}
+{% endif %}
+{% endfor %}

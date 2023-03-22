@@ -37,30 +37,38 @@ keywords: "Productive, agricultural, Rural, Livelihood, environmental, health, S
     <section class="news-grid grid">
         <div class="container">
             <div class="row">
-                {% for product in site.data.products %}
+                {% for product in site.data.product-list %}
+                {% if product.Image600by800 | defined? %}
                 <div class="col-md-4">
                     <div class="card-box-b card-shadow news-box">
                         <div class="img-box-b">
-                            <img src="{{product.image_url_600by800}}" alt="" class="img-b img-fluid">
+                            <img src="/assets/img/products/600by800/{{product.Image600by800}}" alt=""
+                                class="img-b img-fluid">
                         </div>
                         <div class="card-overlay">
                             <div class="card-header-b">
+                                {% assign productName = product.ProductName %}
+                                {% assign productNameSlug = productName | replace: " ", "-" %}
+
                                 <div class="card-category-b">
-                                    <a href="{{product.page_link}}" class="category-b">{{product.name}}</a>
+                                    <a href="/{{ productNameSlug }}" class="category-b">
+                                        {{product.ProductName}}
+                                    </a>
                                 </div>
                                 <div class="card-title-b">
                                     <h2 class="title-2">
-                                        <a href="{{product.page_link}}">{{product.full_name}}
+                                        <a href="/{{ productNameSlug }}">{{product.ProductName}}
                                         </a>
                                     </h2>
                                 </div>
                                 <div class="card-date">
-                                    <span class="date-b">Composition : {{product.composition}}</span>
+                                    <span class="date-b">Composition : {{product.Composition}}</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                {% endif %}
                 {% endfor %}
             </div>
 

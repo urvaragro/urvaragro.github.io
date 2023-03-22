@@ -1,0 +1,12 @@
+---
+layout: default
+permalink: /UG-CALO
+canonical_url: "https://urvaragro.com/UG-CALO"
+title: "Urvaragro | UG-CALO"
+---
+
+{% for product in site.data.product-list %}
+{% if product.ProductName == 'UG CALO' %}
+{% include product.html %}
+{% endif %}
+{% endfor %}

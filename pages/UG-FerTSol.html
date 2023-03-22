@@ -1,0 +1,12 @@
+---
+layout: default
+permalink: /UG-FerTSol
+canonical_url: "https://urvaragro.com/UG-FerTSol"
+title: "Urvaragro | UG-FerTSol"
+---
+
+{% for product in site.data.product-list %}
+{% if product.ProductName == 'UG FerTSol' %}
+{% include product.html %}
+{% endif %}
+{% endfor %}

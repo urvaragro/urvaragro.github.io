@@ -1,0 +1,12 @@
+---
+layout: default
+permalink: /UG-Barebro
+canonical_url: "https://urvaragro.com/UG-Barebro"
+title: "Urvaragro | UG-Barebro"
+---
+
+{% for product in site.data.product-list %}
+{% if product.ProductName == 'UG Barebro' %}
+{% include product.html %}
+{% endif %}
+{% endfor %}

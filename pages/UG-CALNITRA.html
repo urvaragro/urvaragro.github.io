@@ -1,0 +1,12 @@
+---
+layout: default
+permalink: /UG-CALNITRA
+canonical_url: "https://urvaragro.com/UG-CALNITRA"
+title: "Urvaragro | UG-CALNITRA"
+---
+
+{% for product in site.data.product-list %}
+{% if product.ProductName == 'UG CALNITRA' %}
+{% include product.html %}
+{% endif %}
+{% endfor %}
