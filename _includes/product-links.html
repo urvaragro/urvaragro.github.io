@@ -3,7 +3,7 @@
 {% assign productName = product.ProductName %}
 {% assign productNameSlug = productName | replace: " ", "-" %}
 <li class="item-list-a">
-    <i class="bi bi-chevron-right"></i> <a href="/{{ productNameSlug }}">| {{product.ProductName}}</a>
+    <i class="bi bi-chevron-right"></i> <a href="/{{ productNameSlug }}">{{product.ProductName}}</a>
 </li>
 {% endif %}
 {% endfor %}
