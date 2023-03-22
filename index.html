@@ -125,7 +125,7 @@ keywords: "Productive, agricultural, Rural, Livelihood, environmental, health, S
         <div class="swiper-wrapper">
           {% for composition in site.data.product-list %}
           {% if composition.Image600by800 %}
-          {% assign productName = product.ProductName %}
+          {% assign productName = composition.ProductName %}
           {% assign productNameSlug = productName | replace: " ", "-" %}
           <div class="carousel-item-b swiper-slide">
             <div class="card-box-a card-shadow">
