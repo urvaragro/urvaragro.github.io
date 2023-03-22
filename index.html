@@ -113,7 +113,7 @@ keywords: "Productive, agricultural, Rural, Livelihood, environmental, health, S
               <h2 class="title-a">Products</h2>
             </div>
             <div class="title-link">
-              <a href="#products">All Products
+              <a href="/products">All Products
                 <span class="bi bi-chevron-right"></span>
               </a>
             </div>
@@ -123,37 +123,34 @@ keywords: "Productive, agricultural, Rural, Livelihood, environmental, health, S
 
       <div id="property-carousel" class="swiper">
         <div class="swiper-wrapper">
-          {% for composition in site.data.products %}
+          {% for composition in site.data.product-list %}
+          {% if composition.Image600by800 %}
+          {% assign productName = product.ProductName %}
+          {% assign productNameSlug = productName | replace: " ", "-" %}
           <div class="carousel-item-b swiper-slide">
             <div class="card-box-a card-shadow">
               <div class="img-box-a">
-                <img src="{{composition.image_url_600by800}}" alt="" class="img-a img-fluid">
+                <img src="/assets/img/products/600by800/{{composition.Image600by800}}" alt="" class="img-a img-fluid">
               </div>
               <div class="card-overlay">
                 <div class="card-overlay-a-content">
                   <div class="card-header-a">
                     <h2 class="card-title-a">
-                      <a href="/">{{composition.full_name}}</a>
+                      <a href="/{{ productNameSlug }}">{{composition.ProductName}}</a>
                     </h2>
                   </div>
                   <div class="card-body-a">
                     <div class="price-box d-flex">
-                      <span class="price-a">Organic Constituents : 23%</span>
+                      <span class="price-a">{{composition.ProductType}}</span>
                     </div>
-                    <a href="{{composition.page_link}}" class="link-a">Click here to view
+                    <a href="/{{ productNameSlug }}" class="link-a">Click here to view
                       <span class="bi bi-chevron-right"></span>
                     </a>
                   </div>
                   <div class="card-footer-a">
                     <ul class="card-info d-flex justify-content-around">
                       <li>
-                        <h4 class="card-info-title">Mineral Constituents</h4>
-                        <span>15.7%
-                        </span>
-                      </li>
-                      <li>
-                        <h4 class="card-info-title">Inert ingredient</h4>
-                        <span>61.3%</span>
+                        <h4 class="card-info-title">{{composition.Composition}}</h4>
                       </li>
                     </ul>
                   </div>
@@ -161,6 +158,7 @@ keywords: "Productive, agricultural, Rural, Livelihood, environmental, health, S
               </div>
             </div>
           </div>
+          {% endif %}
           {% endfor %}
         </div>
       </div>
