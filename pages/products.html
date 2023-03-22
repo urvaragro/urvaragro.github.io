@@ -38,7 +38,7 @@ keywords: "Productive, agricultural, Rural, Livelihood, environmental, health, S
         <div class="container">
             <div class="row">
                 {% for product in site.data.product-list %}
-                {% if product.Image600by800 | defined? %}
+                {% if product.Image600by800 %}
                 <div class="col-md-4">
                     <div class="card-box-b card-shadow news-box">
                         <div class="img-box-b">
